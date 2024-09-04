@@ -7,7 +7,7 @@ import pandas as pd
 # Set page configuration
 st.set_page_config(page_title="Water Quality",
                    layout="wide",
-                   page_icon="🚱")
+                   page_icon="💦")
 
 water_model = pickle.load(open('water_potability.pkl', 'rb'))
 
