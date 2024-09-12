@@ -53,7 +53,7 @@ if st.button('Predict Water potability'):
     user_input = [ph, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic_carbon, Trihalomethanes, Turbidity]
     
     if '' in user_input:
-        water_potability = 'Kindly fill all the input fields'
+        water_potability = 'Kindly fill all the input fields.'
     else:
         if water_model is not None:
             try:
@@ -62,9 +62,9 @@ if st.button('Predict Water potability'):
                 water_prediction = water_model.predict([user_input])
 
                 if water_prediction[0] == 1:
-                    water_potability = 'The water is potable'
+                    water_potability = 'The water is potable.'
                 elif water_prediction[0] == 0:
-                    water_potability = 'The water is not potable'
+                    water_potability = 'The water is not potable.'
             except Exception as e:
                 water_potability = f"Error in prediction: {e}"
         else:
