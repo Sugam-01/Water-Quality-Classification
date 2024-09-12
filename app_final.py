@@ -48,7 +48,7 @@ with col3:
 water_potability = ''
 
 # Creating a button for Prediction
-if st.button('Predict Water potability'):
+if st.button('Predict Water Potability'):
     # Check if any input field is empty
     user_input = [ph, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic_carbon, Trihalomethanes, Turbidity]
     
