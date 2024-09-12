@@ -53,7 +53,7 @@ if st.button('Predict Water potability'):
     user_input = [ph, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic_carbon, Trihalomethanes, Turbidity]
     
     if '' in user_input:
-        water_potability = 'Please fill in all the input fields'
+        water_potability = 'Kindly fill all the input fields'
     else:
         if water_model is not None:
             try:
