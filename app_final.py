@@ -58,7 +58,7 @@ if st.button('Predict Water potability'):
 
             if water_prediction[0] == 1:
                 water_potability = 'The water is potable'
-            else if water_prediction[0] == 0:
+            elif water_prediction[0] == 0:
                 water_potability = 'The water is not potable'
             else:
             Predict = 'Please fill in all input fields'
