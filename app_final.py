@@ -58,8 +58,10 @@ if st.button('Predict Water potability'):
 
             if water_prediction[0] == 1:
                 water_potability = 'The water is potable'
-            else:
+            else if water_prediction[0] == 0:
                 water_potability = 'The water is not potable'
+            else:
+            Predict = 'Please fill in all input fields'
         except Exception as e:
             water_potability = f"Error in prediction: {e}"
     else:
