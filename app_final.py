@@ -48,7 +48,7 @@ with col3:
 water_potability = ''
 
 # Creating a button for Prediction
-if st.button('Water potability Test Result'):
+if st.button('Predict Water potability'):
     if water_model is not None:
         try:
             user_input = [ph, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic_carbon, Trihalomethanes, Turbidity]
